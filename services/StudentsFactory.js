@@ -15,4 +15,5 @@ studentSignIn.factory('StudentsFactory', function StudentsFactory() {
                       { name : "Regan Mose" },
                       { name : "Margarite Fenlon" }];
 
+  return factory;
 });

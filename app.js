@@ -7,9 +7,9 @@ studentSignIn.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: "partials/home.html"
   });
 
-  $stateProvider.state('attendance', {
-    url:"/attendance",
-    templateUrl: "partials/attendance.html"
-    controller: "AttendanceCtrl"
+  $stateProvider.state('signin', {
+    url:"/signin",
+    templateUrl: "partials/signin.html",
+    controller: 'AttendancesCtrl'
   });
 });
