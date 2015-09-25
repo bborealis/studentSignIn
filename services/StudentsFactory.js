@@ -13,7 +13,6 @@ studentSignIn.factory('StudentsFactory', function StudentsFactory() {
                       { name : "Colton Kiely" },
                       { name : "Aiko Welte" },
                       { name : "Regan Mose" },
-                      { name : "Margarite Fenlon" }
-                      ];
+                      { name : "Margarite Fenlon" }];
 
 });
