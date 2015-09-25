@@ -1,8 +1,28 @@
 <a ui-sref="home">Home</a>
 
-<div class="row" ng-show="students.length">
-  <div class="col-md-4">
 
+
+<h2>Students Here</h2>
+  <ul>
+    <li ng-repeat="item in students | orderBy:'name' | filter:true">
+
+      {{item.name}}
+
+    </li>
+  </ul>
+
+
+<h2>Students Absent</h2>
+
+<ul>
+  <li ng-repeat="item in students | orderBy:'name' | filter:false">
+
+    {{item.name}}
+
+  </li>
+</ul>
+
+<!-- student list
 
   <ul>
     <li ng-repeat="item in students | orderBy:'name'">
@@ -18,4 +38,4 @@
   </ul>
 
   </div>
-</div>
+</div> -->
