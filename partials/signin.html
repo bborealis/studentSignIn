@@ -7,11 +7,11 @@
   <ul>
     <li ng-repeat="item in students | orderBy:'name'">
       {{ item.name }}
-      <div ng-hide="present == true">
-        <button ng-click="addStudentPresent(item); present = true" type="button" class="btn btn-primary">Sign in</button>
+      <div ng-hide="item.present">
+        <button ng-click="addStudentPresent(item)" type="button" class="btn btn-primary">Sign in</button>
       </div>
-      <div ng-show="present == true">
-      <button ng-click="addStudentNotPresent(item); present = false" type="button" class="btn btn-warning">Sign out</button>
+      <div ng-show="item.present">
+        <button ng-click="addStudentNotPresent(item)" type="button" class="btn btn-warning">Sign out</button>
       </div>
       <br>
     </li>
